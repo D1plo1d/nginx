@@ -31,6 +31,8 @@ default['nginx']['log_dir']      = '/var/log/nginx'
 default['nginx']['binary']       = '/usr/sbin/nginx'
 default['nginx']['default_root'] = '/var/www/nginx-default'
 
+include_attribute "ohai"
+
 case node['platform_family']
 when 'debian'
   default['nginx']['user']       = 'www-data'
