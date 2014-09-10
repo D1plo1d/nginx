@@ -62,6 +62,8 @@ default['nginx']['group'] = node['nginx']['user']
 
 default['nginx']['pid'] = '/var/run/nginx.pid'
 
+default['nginx']['port'] = 80
+
 default['nginx']['gzip']              = 'on'
 default['nginx']['gzip_static']       = 'off'
 default['nginx']['gzip_http_version'] = '1.0'
